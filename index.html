@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <nav class="navbar">
+    <a class="navbar-brand">
+      <img src="./images/logo.svg" alt="logo">
+    </a>
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="collapse-navbar">
+      <ul class="navbar-start">
+        <li>
+          <a href="#">Features</a>
+        </li>
+        <li>
+          <a href="#">Pricing</a>
+        </li>
+        <li>
+          <a href="#">Resources</a>
+        </li>
+      </ul>
+      <hr class="links-divider">
+      <ul class="navbar-end">
+        <li>
+          <a class="btn btn-secondary" href="#">Login</a>
+        </li>
+        <li>
+          <a class="btn btn-primary" href="#">Sign Up</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="hero-section">
+    <div class="left-section">
+      <h2> More than just<br> shorter links</h2>
+      <p>Build your brand’s recognition and get detailed insights
+        on how your links are performing.</p>
+      <a class="btn btn-primary">Get Started</a>
+    </div>
+    <div class="right-section">
+      <img src="./images/illustration-working.svg" alt="">
+    </div>
+  </section>
+
+  <section class="shorten">
+    <div class="shorten-container">
+      <div class="shorten-input">
+        <input type="text" required placeholder="Shorten a link here..." id="url">
+        <a class="btn btn-primary submit">Shorten It!</a>
+      </div>
+      <span class="errors"></span>
+    </div>
+    <div class="display-links">
+      <div class="link-output">
+        <p id="original-link">https://frontendmentor.io</p>
+        <a class="shortened-link">https://rel.ink/GdrSs</a>
+        <a class="btn btn-primary">Copy</a>
+      </div>
+    </div>
+  </section>
+  <section class="statistics-section">
+    <div class="heading">
+      <h3>Advanced Statistics</h3>
+      <p>Track how your links are performing across the web with our
+        advanced statistics dashboard.</p>
+    </div>
+    <div class="cards">
+      <div class="card card-1">
+        <div class="circle">
+          <img src="./images/icon-brand-recognition.svg" alt="Brand Recognition">
+        </div>
+
+        <h4> Brand Recognition</h4>
+        <p>Boost your brand recognition with each click. Generic links don’t
+          mean a thing. Branded links help instil confidence in your content.</p>
+      </div>
+      <!-- <div class="link-line"></div> -->
+      <div class="card card-2">
+        <div class="circle">
+          <img src="./images/icon-detailed-records.svg" alt="Detailed record">
+        </div>
+
+        <h4>Detailed Records</h4>
+        <p>Gain insights into who is clicking your links. Knowing when and where
+          people engage with your content helps inform better decisions.
+        </p>
+      </div>
+      <!-- <div class="link-line"></div> -->
+      <div class="card card-3">
+        <div class="circle">
+          <img src="./images/icon-fully-customizable.svg" alt="Fully Customizable">
+        </div>
+
+        <h4>Fully Customizable</h4>
+        <p>Improve brand awareness and content discoverability through customizable
+          links, supercharging audience engagement.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="boost-links">
+    <h3>Boost your links today</h3>
+    <a class="btn btn-primary">Get Started</a>
+  </section>
+
+  <footer>
+    <div class="logo">
+      <a class="navbar-brand" href="#">
+        <img src="./images/logo.svg" alt="logo">
+      </a>
+    </div>
+
+    <div class="links features">
+      <h4 class="title">Features</h4>
+      <a>Link Shortening</a>
+      <a>Branded Links</a>
+      <a>Analytics</a>
+    </div>
+
+    <div class="links resources">
+      <h4 class="title">Resources</h4>
+      <a>Blog</a>
+      <a>Developers</a>
+      <a>Support</a>
+    </div>
+
+    <div class="links company">
+      <h4 class="title">Company</h4>
+      <a>About</a>
+      <a>Our Team</a>
+      <a>Careers</a>
+      <a>Contact</a>
+    </div>
+    <div class="socials">
+      <a><i class="fa fa-facebook"></i></a>
+      <a><i class="fa fa-twitter"></i></a>
+      <a><i class="fa fa-pinterest"></i></a>
+      <a><i class="fa fa-instagram"></i></a>
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>

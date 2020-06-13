@@ -1,0 +1,577 @@
+html,
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 62.7%;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem 8rem;
+
+    /* border: 1px solid red; */
+}
+
+.navbar .navbar-brand {
+    align-self: center;
+    position: relative;
+    /* border: 1px solid red; */
+
+}
+
+.collapse-navbar {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: space-between;
+    margin: auto 1rem;
+    /* border: 1px solid red; */
+}
+
+.links-divider {
+    display: none;
+}
+
+.collapse-navbar .navbar-start {
+    align-items: center;
+    /* border: 1px solid red; */
+
+}
+
+.collapse-navbar .navbar-end {
+    align-items: center;
+    /* border: 1px solid red; */
+
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li {
+    list-style: none;
+    padding: 1rem;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: hsl(257, 7%, 63%);
+    font-weight: 700;
+    transition: .3s ease-out;
+}
+
+.navbar ul li a:hover {
+    color: hsl(260, 8%, 14%);
+}
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    width: 2rem;
+    position: absolute;
+    right: 2rem;
+    top: 1rem;
+    display: none;
+}
+
+.hamburger:hover {
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 2rem;
+    border: .15rem solid hsl(257, 7%, 63%);
+    border-radius: 1rem;
+}
+
+.hamburger span:not(:last-child) {
+    margin-bottom: .4rem;
+}
+
+/* Mobile and Tablets */
+@media screen and (max-width: 940px) {
+    .navbar {
+        flex-direction: column;
+        padding: 1rem 1rem;
+
+    }
+
+    .navbar .navbar-brand {
+        align-self: flex-start;
+        margin-left: 1rem;
+    }
+
+    .navbar .navbar-brand img {
+        height: 1.9rem;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .collapse-navbar {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        background-color: hsl(257, 27%, 26%);
+        border-radius: 1rem;
+        margin-top: 1rem;
+        max-width: 40rem;
+        transition: all .3s ease-in-out;
+
+    }
+
+    .collapse-navbar.active {
+        display: flex;
+    }
+
+    .links-divider {
+        display: block;
+        margin: 1rem;
+        width: 90%;
+
+    }
+
+    .collapse-navbar .navbar-start {
+        flex: 1;
+        text-align: center;
+        width: 100%;
+        align-self: center;
+        /* border: 1px solid red; */
+
+    }
+
+    .collapse-navbar .navbar-end {
+        flex: 1;
+        text-align: center;
+        width: 100%;
+        align-self: center;
+        /* border: 1px solid red; */
+
+    }
+
+    .navbar ul li a {
+        color: #fff;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+.navbar .btn.btn-primary {
+    width: 8rem;
+}
+
+/* Buttons */
+
+.btn.btn-primary {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 2rem;
+    background-color: hsl(180, 66%, 49%);
+    transition: all .3s ease-out;
+    width: 15rem;
+    height: 3rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.btn.btn-primary:hover {
+    background-color: hsl(180, 78.7%, 76.1%);
+    color: #fff;
+}
+
+/* top hero section */
+.hero-section {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    padding-left: 7rem;
+    overflow: hidden;
+}
+
+.hero-section .left-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border: 1px solid red; */
+}
+
+.hero-section .right-section {
+    flex: 1;
+    margin-right: -9rem;
+
+}
+
+.hero-section h2 {
+    font-size: 4rem;
+    font-weight: 700;
+    color: hsl(257, 27%, 26%);
+    letter-spacing: -.3rem;
+
+}
+
+.hero-section p {
+    font-size: 1.1rem;
+    color: hsl(257, 7%, 63%);
+    font-weight: 400;
+    margin-top: 1.5rem;
+    line-height: 2rem;
+
+}
+
+.hero-section .btn-primary {
+    margin-top: 1rem;
+}
+
+@media screen and (max-width: 740px) {
+    .hero-section {
+        padding: 2rem;
+    }
+    .hero-section .right-section img {
+        height: 27rem;
+    }
+    .hero-section h2 {
+        font-size: 3.5rem;
+        letter-spacing: -.1rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .hero-section {
+        padding: 1rem;
+    }
+    .hero-section .right-section img {
+        height: 20rem;
+    }
+    .hero-section h2 {
+        font-size: 3rem;
+        letter-spacing: -.2rem;
+    }
+}
+
+/* Shorten iNput section */
+.shorten {
+    background: #effef7;
+    margin: 0;
+    padding: 3rem 7rem;
+}
+
+.shorten-container {
+    background-color: hsl(257, 27%, 26%);
+    padding: 3rem;
+    border-radius: .5rem;
+    background-image: url(./images/bg-shorten-desktop.svg);
+    background-position: center;
+    background-size: cover;
+}
+
+.shorten-container .shorten-input {
+    display: flex;
+
+}
+
+.shorten-container .shorten-input input {
+    width: 80%;
+    height: 3rem;
+}
+
+.shorten-container input[type=text] {
+    color: hsl(0, 87%, 67%);
+    font-weight: 700;
+    margin-right: 2rem;
+}
+
+.shorten-container .shorten-input a.btn-primary {
+    align-self: center;
+    border-radius: .5rem;
+}
+
+.shorten-container .errors {
+    font-size: 1rem;
+    color: hsl(0, 87%, 67%);
+    font-weight: 700;
+}
+
+.shorten .link-output {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    background-color: #fff;
+    padding: .5rem;
+    border-radius: .5rem;
+}
+
+.shorten .link-output p {
+    cursor: pointer;
+    font-size: 1.1rem;
+    color: hsl(257, 27%, 26%);
+    font-weight: 400;
+    /* border: 1px solid red; */
+}
+
+.shorten .link-output .shortened-link {
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: 0;
+    font-size: 1.1rem;
+    color: hsl(180, 66%, 49%);
+    font-weight: 400;
+    transition: .3s ease-out;
+    /* border: 1px solid red; */
+
+}
+
+.shorten .link-output .shortened-link:hover {
+    color: hsl(257, 27%, 26%);
+}
+
+.shorten .link-output .btn-primary {
+    width: 7rem;
+    height: 2.5rem;
+    border-radius: .5rem;
+    margin-left: 1rem;
+    /* border: 1px solid red; */
+}
+
+@media screen and (max-width: 740px) {
+    .shorten {
+        padding: 2rem;
+    }
+
+    .shorten-container .shorten-input {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .shorten-container .shorten-input input {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .shorten-container .shorten-input a.btn-primary {
+        width: 100%;
+    }
+
+    .shorten .link-output .shortened-link {
+        margin-right: auto;
+    }
+
+    .shorten .link-output {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .shorten {
+        padding: 1rem;
+    }
+
+    .shorten-container {
+        padding: 1rem;
+    }
+
+    .shorten .link-output {
+        flex-direction: column;
+    }
+}
+
+/* Statistics section */
+.statistics-section {
+    display: flex;
+    flex-direction: column;
+    background: #effef7;
+    margin: 0;
+}
+
+.heading {
+    text-align: center;
+}
+
+.heading h3 {
+    font-weight: 700;
+    font-size: 2.1rem;
+    letter-spacing: -.1rem;
+    color: hsl(257, 27%, 26%);
+}
+
+.heading p {
+    font-size: 1.1rem;
+    color: hsl(257, 7%, 63%);
+    font-weight: 400;
+    margin-top: 1.5rem;
+    line-height: 2rem;
+}
+
+.statistics-section .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    min-height: 30rem;
+    padding-top: 2rem;
+}
+
+.statistics-section .cards .card {
+    background: #fff;
+    width: 25rem;
+    padding: 2rem;
+    border-radius: .5rem;
+    position: relative;
+    margin: 2rem;
+}
+
+.statistics-section .cards .card h4 {
+    font-weight: 700;
+    font-size: 1.4rem;
+    letter-spacing: -.1rem;
+    color: hsl(257, 27%, 26%);
+    margin-top: 2rem;
+}
+
+.statistics-section .cards .card p {
+    font-size: 1.1rem;
+    color: hsl(257, 7%, 63%);
+    font-weight: 400;
+    margin-top: 1.5rem;
+    line-height: 2rem;
+}
+
+.statistics-section .cards .card-1 {
+    align-self: start;
+}
+
+.statistics-section .cards .card-2 {
+    align-self: center;
+}
+
+.statistics-section .cards .card-3 {
+    align-self: flex-end;
+}
+.statistics-section .cards .card-3 .circle img {
+    width: 40px;
+    height: 40px;
+}
+.statistics-section .cards .link-line {
+    width: 3rem;
+    height: .1rem;
+    align-self: center;
+    border: .3rem solid hsl(180, 66%, 49%);
+}
+
+.statistics-section .cards .circle {
+    background-color: hsl(257, 27%, 26%);
+    position: absolute;
+    top: -2rem;
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 890px) {
+    .statistics-section .cards {
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 375px) {
+    .statistics-section .cards .card {
+        margin: 1rem;
+        padding: 1rem;
+    }
+}
+
+/* Boost Links */
+.boost-links {
+    text-align: center;
+    background-color: hsl(257, 27%, 26%);
+    padding: 3rem;
+    background-image: url(./images/bg-boost-desktop.svg);
+    background-position: center;
+    background-size: cover;
+}
+
+.boost-links h3 {
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: #fff;
+    margin-top: 2rem;
+}
+
+.boost-links a {
+    margin: 1rem auto;
+}
+
+
+/* Footer section */
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background: hsl(260, 8%, 14%);
+    color: #fff;
+    padding: 2rem 1rem;
+}
+
+footer .logo {
+    margin-top: 1rem;
+    color: #fff;
+    min-width: 11rem;
+}
+
+footer .links {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    min-width: 11rem;
+}
+
+footer .links .title {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #fff;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+footer .links a,
+footer .socials a {
+    margin-top: .7rem;
+    font-size: .8rem;
+    transition: .3s ease-out;
+}
+
+footer .links a:hover,
+footer .socials a:hover {
+    cursor: pointer;
+    color: hsl(180, 78.7%, 76.1%);
+}
+
+footer .socials {
+    padding-top: 1rem;
+}
+
+footer .socials a {
+    padding: .4rem;
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 375px) {
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
